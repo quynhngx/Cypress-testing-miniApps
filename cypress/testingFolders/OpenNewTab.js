@@ -3,8 +3,10 @@
 
 describe("Playing around mini apps", function () {
   it("OpenNewTab", function () {
-    //Open new tab by clicking on the button
-    //and assert the text on the new opened page
+    /**
+     * Open new tab by clicking on the button
+     * and assert the text on the new opened page
+     */
 
     cy.visit(Cypress.env("url"));
     cy.get(".card-content").contains("New Tab").click();
@@ -12,7 +14,9 @@ describe("Playing around mini apps", function () {
     cy.get(".btn.btn-lg").invoke("removeAttr", "target").click();
     cy.get("#wrapper").should("include.text", "Welcome to the new page!");
 
-    // Lesson learned: if the new opened page (child) has the same url with its
-    //parents. Should not use cy.origin()
+    /**
+     * Lesson learned: if the new opened page (child) has the same url with its
+     * parents. Should not use cy.origin()
+     */
   });
 });
