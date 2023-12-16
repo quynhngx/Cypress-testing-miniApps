@@ -17,4 +17,4 @@ describe("Playing around mini apps", function () {
   });
 });
 
-//Lession learned: The ${i} syntax is called a template literal, and it's a way to embed variables or expressions inside a string in JavaScript.
+// Lesson learned: The ${i} syntax is called a template literal, and it's a way to embed variables or expressions inside a string in JavaScript.
