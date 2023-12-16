@@ -12,7 +12,7 @@ describe("Playing around mini apps", function () {
     cy.get(".btn.btn-lg").invoke("removeAttr", "target").click();
     cy.get("#wrapper").should("include.text", "Welcome to the new page!");
 
-    //Lession learned: if the new opened page (child) has the same url with its
+    // Lesson learned: if the new opened page (child) has the same url with its
     //parents. Should not use cy.origin()
   });
 });

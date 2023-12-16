@@ -3,7 +3,7 @@
 
 describe("Playing around mini apps", function () {
   it("Dynamic Table", function () {
-    //Find the Spider-Man in a table that changes the order of rows and assert his real name
+    // Find the Spider-Man in a table that changes the order of rows and assert his real name
 
     cy.visit(Cypress.env("url"));
     cy.contains("Dynamic Table").click();
@@ -16,7 +16,7 @@ describe("Playing around mini apps", function () {
         );
       }
 
-      //Lession learned: when selecting elements in dynamic table, make sure to select all table rows (not table itself)
+      // Lesson learned: when selecting elements in dynamic table, make sure to select all table rows (not table itself)
     });
   });
 });
